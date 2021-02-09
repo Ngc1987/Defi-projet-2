@@ -45,19 +45,22 @@ section
 {
     width: 1200px;
     margin: 0 auto;
-    position: relative;
 }
 
+#main-image
+{
+    height: 500px;
+}
 
-.mainimg
+#mainimg
 {
     width: 1200px;
     position: absolute;
     z-index: 1;
-    margin-top: -4px;
+    margin-top: -6px;
 }
 
-.loggraph
+#loggraph
 {
     width: 200px;
     position: absolute;
@@ -66,13 +69,32 @@ section
     margin-left: 500px;
 }
 
-.main-image h1
+#main-image h1
 {
     position: absolute;
     z-index: 2;
     margin-top: 250px;
-    color: black;
+    color: white;
     font-size: 2em;
     margin-left: 440px;
     font-weight: bold;
+}
+
+#midpage
+{
+    color: black;
+    z-index: 3;
+    font-size: 3em;
+}
+
+#midpage h2
+{
+    text-align: center;
+    vertical-align: center;
+    max-width: 800px;
+    font-size: 0.5em;
+    margin: auto;
+    margin-top: 30px;
+    color: #675757;
+
 }
