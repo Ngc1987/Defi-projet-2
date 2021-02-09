@@ -1,4 +1,22 @@
 @font-face {
+    font-family: 'robotolight';
+    src: url('fonts/roboto-light-webfont.woff2') format('woff2'),
+         url('fonts/roboto-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
     font-family: 'robotothin';
     src: url('fonts/roboto-thin-webfont.woff2') format('woff2'),
          url('fonts/roboto-thin-webfont.woff') format('woff');
@@ -13,6 +31,11 @@
     font-family: 'robotothin' , Arial, Helvetica, sans-serif ;
 }
 
+body
+{
+    display: flex;
+    flex-direction: column; 
+}
 
 header
 {
@@ -26,13 +49,20 @@ header
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 1200px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+    max-height: 100px;
 }
 
 #nav
 {
     margin-top: 40px;
     width: 170px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 header a
@@ -43,41 +73,48 @@ header a
 
 section
 {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
+    height: auto;
+}
+
+#sect1
+{
+    max-width: 1200px;
+    width: 100%;
+    height: 500px  ;
+    background-image: url(Images/backgroung_image.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
 }
 
 #main-image
 {
-    height: 500px;
-}
-
-#mainimg
-{
-    width: 1200px;
-    position: absolute;
-    z-index: 1;
-    margin-top: -6px;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 #loggraph
 {
-    width: 200px;
-    position: absolute;
-    z-index: 2;
-    margin-top: 170px;
-    margin-left: 500px;
+    max-width: 200px;
+    width: auto;
+    margin: 0 auto;
+    display: flex;
+    margin: auto;
 }
 
 #main-image h1
 {
-    position: absolute;
-    z-index: 2;
-    margin-top: 250px;
+    display: flex;
     color: white;
     font-size: 2em;
-    margin-left: 440px;
     font-weight: bold;
+    margin: auto;
 }
 
 #midpage
@@ -96,5 +133,74 @@ section
     margin: auto;
     margin-top: 30px;
     color: #675757;
+    margin-bottom: 100px;
+    font-family: 'robotolight' , Arial, Helvetica, sans-serif;
+}
 
+#descript
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 900px;
+    justify-content: space-between;
+}
+
+#descript1
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 300px;
+    align-items: center;
+}
+
+#descript2
+{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    align-items: center;
+}
+
+#descript3
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+}
+
+#descript img
+{
+    width: 75px;
+    margin-bottom: 20px;
+}
+
+#descript p
+{
+    text-align: center;
+    white-space: normal;
+    font-size: 0.95em;
+    font-family: 'robotoregular' , Arial, Helvetica, sans-serif;
+}
+
+#expclient
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+    max-width: 580px;
+}
+
+#1erp
+{
+}
+
+#2emp p
+{
+    padding-top: 30px;
 }
