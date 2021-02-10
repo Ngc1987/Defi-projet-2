@@ -105,7 +105,6 @@ section
     width: auto;
     margin: 0 auto;
     display: flex;
-    margin: auto;
 }
 
 #main-image h1
@@ -115,6 +114,7 @@ section
     font-size: 2em;
     font-weight: bold;
     margin: auto;
+    margin-top: 23px;
 }
 
 #midpage
@@ -169,7 +169,7 @@ section
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 200px;
+    max-width: 300px;
 }
 
 #descript img
@@ -218,7 +218,7 @@ section
     margin: 0 auto;
     height: auto;
     background-color: #5b359d;
-    height: 220px;
+    min-height: 240px;
     margin-top: 15px;
     display: flex;
     flex-direction: column;
@@ -229,6 +229,7 @@ section
 {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 #mpg h3
@@ -237,12 +238,15 @@ section
     font-size: 0.8em;
     color: white;
     margin-top: 20px;
+    text-align: center;
+    vertical-align: center;
 }
 
 #logrezo
 {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 10px;
 
@@ -252,18 +256,24 @@ section
 {
     color: #bdaed8;
     font-size: 2em;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #fcbk
 {
     color: #bdaed8;
     font-size: 2em;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #insta
 {
     color: #bdaed8;
     font-size: 2em;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #footfoot
@@ -272,14 +282,44 @@ section
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
-    margin-top: 15px;
+    margin-top: 25px;
+    flex-wrap: wrap;
 }   
 
 #footfoot h1
 {
     color: #bdaed8;
     font-size: 1.2em;
-    margin-right: 20px;
+}
+
+#acces
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#propos
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+#coord
+{
+    display: flex;
+    flex-direction: column;
+}
+
+ul li
+{
+    list-style-position: inside;
+    padding-left: 40px;
+}
+
+ul
+{
+    padding-top: 15px;
 }
 
 li
@@ -294,3 +334,4 @@ li
 {
     list-style-type: none;
 }
+
